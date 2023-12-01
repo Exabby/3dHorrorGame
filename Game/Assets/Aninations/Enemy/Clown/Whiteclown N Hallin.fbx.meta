@@ -3,7 +3,22 @@ guid: 0d3d3c9ba1ead154c81318fc0ac43b4d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: whiteclown_diffuse
+    second: {fileID: 2800000, guid: 908047e700ea40341b2db7b43b3f3397, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: whiteclown_normal
+    second: {fileID: 2800000, guid: 4453b44f83cbf3a42974d07b8c2fc52b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: whiteclown_specular
+    second: {fileID: 2800000, guid: fe7bff0254890bd4d8021195f8817d3d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -75,10 +90,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - c6ae4a166acdb8547a79eb724994c971
-  - ec8352351ad689f4a942aba68e69a359
-  - c63c9a887461403489f46a8ee8d5ca35
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
