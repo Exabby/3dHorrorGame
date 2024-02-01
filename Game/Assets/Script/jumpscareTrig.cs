@@ -1,32 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class jumpscareTrig : MonoBehaviour
-{
-    public GameObject playerObj, jumpscareCam;
-    public Animator monsterAnim;
-    public string sceneName;
-    public float jumpscareTime;
-    public monsterAI monsterScript;
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerObj.SetActive(false);
-            monsterScript.enabled = false;
-            monsterAnim.speed = 1f;
-            jumpscareCam.SetActive(true);
-
-            StartCoroutine(changeScene());
-            monsterAnim.SetTrigger("jumpscare");
-        }
-    }
-    IEnumerator changeScene()
-    {
-        yield return new WaitForSeconds(jumpscareTime);
-        SceneManager.LoadScene(sceneName);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a513791410408c1cad3e0f5efdbf007cd173d7faae22e4a10a822de0147e9c41
+size 958
